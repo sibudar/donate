@@ -29,7 +29,7 @@ function getAyoba() {
 
 
 function startPayment() {
-    var pm = 'ozow';
+    var pm = 'Ozow';
     var currency = document.getElementById("currency").value;
     var amount = parseFloat(document.getElementById("amount").value);
     var description = 'donation';
@@ -52,7 +52,7 @@ function startPaymentOverlay() {
 
 
 function onPaymentStatusChanged(transactionId, status, error) {
-    let res = `Transaction ID:  ${transactionId}  Status:  ${status} Error: ${error} `;
-     document.getElementById("txtPaymentStatusChanged").textContent = res;
-    txtPaymentStatusChanged.text = res;
+    // let res = `Transaction ID:  ${transactionId}  Status:  ${status} Error: ${error} `;
+    //  document.getElementById("txtPaymentStatusChanged").textContent = res;
+    // txtPaymentStatusChanged.text = res;
 }
